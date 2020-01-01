@@ -53,24 +53,6 @@ def trading(session, bot):
         logging.info("+++++++++++++++ Shows the tail +++++++++++++++")
         logging.info(diff.tail())
 
-
-        bot.send_message("------------------------------------------------")
-        bot.send_message("--- Tail of the DataFrame ---")
-        bot.send_message(diff.tail())
-
-
-        logging.info("+++++++++++++++ Get Funding Rate +++++++++++++++")
-        funding_rate=float(session.get_the_last_funding_rate()["result"]["funding_rate"])
-        bot.send_message("--- Funding Rate ---")
-        bot.send_message(funding_rate*100)
-        logging.info(funding_rate)
-
-        logging.info("+++++++++++++++ Get Predicted Funding Rate +++++++++++++++")
-        predicted_funding_rate=float(session.get_predicted_funding_rate_funding_fee()["result"]["predicted_funding_rate"])*100
-        bot.send_message("--- Predicted Funding Rate ---")
-        bot.send_message(predicted_funding_rate)
-        logging.info(predicted_funding_rate)
-
         del diff
         try:
             my_position= session.my_position()['result'][0]['side']
