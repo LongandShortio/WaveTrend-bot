@@ -89,7 +89,7 @@ def trading(session, bot):
                 message=f"Price = {price}, Size = {size}, Leverage = {leverage}, Stop Loss = {stop_loss}, Take Profit = {take_profit}"
                 bot.send_message(message)
                 sleep(30*60)
-                logging.info('+++++++++++++++ Sleep 5*60s for the order to get filled +++++++++++++++')
+                logging.info('+++++++++++++++ Sleep for the order to get filled +++++++++++++++')
 
             elif my_position=="Sell" and go_long:
                 session.cancel_all_pending_order()
@@ -108,7 +108,7 @@ def trading(session, bot):
                 message=f"Price = {price}, Size = {size}, Leverage = {leverage}, Stop Loss = {stop_loss}, Take Profit = {take_profit}"
                 bot.send_message(message)
                 sleep(30*60)
-                logging.info('+++++++++++++++ Sleep 5*60s for the order to get filled +++++++++++++++')
+                logging.info('+++++++++++++++ Sleep for the order to get filled +++++++++++++++')
 
             elif my_position=="Buy" and go_short:
                 session.cancel_all_pending_order()
@@ -127,7 +127,7 @@ def trading(session, bot):
                 message=f"Price = {price}, Size = {size}, Leverage = {leverage}, Stop Loss = {stop_loss}, Take Profit = {take_profit}"
                 bot.send_message(message)
                 sleep(30*60)
-                logging.info('+++++++++++++++ Sleep 5*60s for the order to get filled +++++++++++++++')
+                logging.info('+++++++++++++++ Sleep for the order to get filled +++++++++++++++')
 
 
 
