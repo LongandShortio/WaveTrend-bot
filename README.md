@@ -1,8 +1,9 @@
 # Setup the bot
 
-* Type your API key
-* Type your private key
-* Type your Telegram token
-* Type your Telegram chat ID
-* Choose your leverage
+* Type your API key in main_trading and main_telegram
+* Type your private key in main_trading and main_telegram
+* Type your Telegram token in main_trading and main_telegram
+* Type your Telegram chat ID in main_trading and main_telegram
+* Choose your leverage in main_trading and main_telegram
 * By default the size position is $500, you can change this in real_bot.py
+* By default the bot is looking at the daily timeframe, you can change this in real_bot.py
