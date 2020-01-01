@@ -131,7 +131,7 @@ def trading(session, bot):
 
 
 
-            logging.info('+++++++++++++++ Sleep 30*60s +++++++++++++++')
+            logging.info('+++++++++++++++ Sleep +++++++++++++++')
             sleep(15*60)
             logging.info('+++++++++++++++ Starts again +++++++++++++++')
         except:
