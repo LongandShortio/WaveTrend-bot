@@ -14,7 +14,7 @@ logging.basicConfig(filename=f"{os.getcwd()}/rest_api.log",format='%(asctime)s -
 
 class Account:
     def __init__(self, api_key, secret, leverage, url="https://api.bybit.com"):
-        """Use https://api.bybit.com if you do not want to use the Testnet"""
+        """Use https://api-testnet.bybit.com if you want to use the Testnet"""
         self.api_key=api_key
         self.secret = secret
         self.leverage=leverage
