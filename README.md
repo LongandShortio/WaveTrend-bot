@@ -12,7 +12,20 @@
 * By default the bot is looking at the daily timeframe, you can change this in real_bot
 
 # Launch the bot
-
 `````
-chmod +x
+chmod +x path/to/the/directory/main_trading.py
+chmod +x path/to/the/directory/main_telegram.py
+``````
+
+``````
+nohup path/to/the/directory/main_trading.py &
+nohup path/to/the/directory/main_telegram.py &
+``````
+
+# Stop the bot
+
+``````
+ps -ef
+kill -9 <pid of the script>
+
 ``````
